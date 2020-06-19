@@ -1,24 +1,45 @@
+:root{
+  // --themeColor:#000;
+  --themeColor: white;
+  --fontColor: black;
+  --fontColor2: rgba(0, 0, 0, 0.65);
+  --layoutBackground: #f0f2f5;
+  --selectBackground: #f0f7ff;
+  --primaryColor: #f0f7ff;
+  --selcectColor: #4882F3;
+  --breadcrumbColor: rgba(0, 0, 0, 0.45);
+  --lastbreadcrumbColor: rgba(0, 0, 0, 0.65);
+  --selectMenu: #f0f7ff;
+}
+
 #root>section {
   height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header_title{
   font-size: 20px;
   font-weight: 500;
   margin-left: -20px;
+  color: var(--fontColor);
 }
 
 .ant-layout-header {
   height: 65px;
-  background: #fff;
+  background: var(--themeColor);
   box-shadow: 0 8px 24px -2px rgba(0,0,0,.05);
-  z-index: 99999;
+  z-index: 1000;
   
 }
 
 .ant-layout-sider-trigger {
-  background: white;
-  color: black;
+  background: var(--themeColor);
+  color: var(--fontColor);
 }
 
 #components-layout-demo-top-side-2 .logo {
@@ -34,5 +55,7 @@
 }
 
 .site-layout-background {
-  background: #fff;
+  background: var(--themeColor);
+  border-radius: 5px;
+  box-shadow: 0 8px 30px -2px rgba(4, 0, 255, 0.05);      
 }
